@@ -1,2 +1,7 @@
 .idea
 __pycache__/
+#логи и файлы выполнения
+*.log
+logs/
+*.pid
+*.seed

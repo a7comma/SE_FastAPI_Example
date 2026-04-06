@@ -5,3 +5,5 @@ transformers
 pydantic
 streamlit
 coloraide
+pytest
+pytest-mock

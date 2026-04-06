@@ -1,0 +1,40 @@
+2026-04-06 19:24:21,586 - app_logger - INFO - SentimentService initialized with HuggingFace pipeline
+2026-04-06 19:24:21,594 - app_logger - INFO - Analyzing text: I love this...
+2026-04-06 19:24:21,594 - app_logger - INFO - Analysis result: [{'label': 'POSITIVE', 'score': 0.91}]
+2026-04-06 19:24:21,602 - app_logger - INFO - SentimentService initialized with HuggingFace pipeline
+2026-04-06 19:24:21,602 - app_logger - WARNING - Empty text received for analysis
+2026-04-06 19:24:21,604 - app_logger - INFO - SentimentService initialized with HuggingFace pipeline
+2026-04-06 19:24:21,604 - app_logger - INFO - Analyzing text: Some text...
+2026-04-06 19:24:21,604 - app_logger - ERROR - Error during sentiment analysis: model crash
+Traceback (most recent call last):
+  File "c:\SE_FastAPI_Example\services\sentiment.py", line 17, in analyze
+    result = self.classifier(text)
+  File "C:\Program Files\Python313\Lib\unittest\mock.py", line 1167, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\unittest\mock.py", line 1171, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\unittest\mock.py", line 1226, in _execute_mock_call
+    raise effect
+Exception: model crash
+2026-04-06 19:25:11,558 - app_logger - INFO - SentimentService initialized with HuggingFace pipeline
+2026-04-06 19:25:11,560 - app_logger - INFO - Analyzing text: Я люблю тебя, Мир!...
+2026-04-06 19:25:11,560 - app_logger - INFO - Analysis result: [{'label': 'POSITIVE', 'score': 0.91}]
+2026-04-06 19:25:11,563 - app_logger - INFO - SentimentService initialized with HuggingFace pipeline
+2026-04-06 19:25:11,563 - app_logger - WARNING - Empty text received for analysis
+2026-04-06 19:25:11,565 - app_logger - INFO - SentimentService initialized with HuggingFace pipeline
+2026-04-06 19:25:11,565 - app_logger - INFO - Analyzing text: Some text...
+2026-04-06 19:25:11,566 - app_logger - ERROR - Error during sentiment analysis: model crash
+Traceback (most recent call last):
+  File "c:\SE_FastAPI_Example\services\sentiment.py", line 17, in analyze
+    result = self.classifier(text)
+  File "C:\Program Files\Python313\Lib\unittest\mock.py", line 1167, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\unittest\mock.py", line 1171, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\unittest\mock.py", line 1226, in _execute_mock_call
+    raise effect
+Exception: model crash

@@ -22,7 +22,8 @@ console_handler.setFormatter(console_formatter)
 file_handler = RotatingFileHandler(
     os.path.join(LOG_DIR, "app.log"),
     maxBytes=5 * 1024 * 1024,
-    backupCount=5
+    backupCount=5,
+    encoding='utf-8'
 )
 file_handler.setLevel(logging.INFO)
 file_handler.setFormatter(console_formatter)
